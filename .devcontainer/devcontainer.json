@@ -6,12 +6,15 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"GitHub.copilot",
-				"GitHub.copilot-chat",
 				"BeardedBear.beardedicons",
 				"BeardedBear.beardedtheme",
-				"ms-vscode-remote.remote-containers",
+				"esbenp.prettier-vscode",
+				"firsttris.vscode-jest-runner",
+				"GitHub.copilot-chat",
+				"GitHub.copilot",
 				"mhutchie.git-graph",
+				"ms-playwright.playwright",
+				"ms-vscode-remote.remote-containers",
 				"nrwl.angular-console"
 			]
 		}
