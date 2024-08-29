@@ -2,6 +2,9 @@
   "recommendations": [
     "BeardedBear.beardedtheme",
     "BeardedBear.beardedicons",
-    "ms-vscode-remote.remote-containers"
+    "ms-vscode-remote.remote-containers",
+    "esbenp.prettier-vscode",
+    "ms-playwright.playwright",
+    "firsttris.vscode-jest-runner"
   ]
 }
