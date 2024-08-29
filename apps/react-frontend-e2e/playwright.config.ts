@@ -25,7 +25,7 @@ export default defineConfig({
   },
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'npx nx run frontend:preview',
+    command: 'npx nx run react-frontend:preview',
     url: 'http://localhost:4300',
     reuseExistingServer: !process.env.CI,
     cwd: workspaceRoot,
