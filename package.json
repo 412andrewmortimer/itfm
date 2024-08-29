@@ -1,0 +1,12 @@
+{
+  "name": "itfm",
+  "version": "1.0.0",
+  "description": "Implement the Fn Manual",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"••• Error: no test specified •••\" && exit 1"
+  },
+  "keywords": ["nx", "monorepo"],
+  "author": "Andrew Mortimer",
+  "license": "ISC"
+}
