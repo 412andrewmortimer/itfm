@@ -1,0 +1,17 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"BeardedBear.beardedicons",
+				"BeardedBear.beardedtheme",
+				"ms-vscode-remote.remote-containers",
+				"mhutchie.git-graph"
+			]
+		}
+	}
+}
