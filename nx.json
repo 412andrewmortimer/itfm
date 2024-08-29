@@ -2,5 +2,9 @@
   "installation": {
     "version": "19.6.4"
   },
-  "nxCloudAccessToken": "NjcxOTUzM2QtOTA3My00NWNjLWIwNGYtOTIyMGRiNDYzYzMzfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "NjcxOTUzM2QtOTA3My00NWNjLWIwNGYtOTIyMGRiNDYzYzMzfHJlYWQtd3JpdGU=",
+  "workspaceLayout": {
+    "libsDir": "libs",
+    "appsDir": "apps"
+  }
 }
