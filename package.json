@@ -6,5 +6,10 @@
     "test": "node --version"
   },
   "keywords": [],
-  "author": "Andrew Mortimer"
+  "author": "Andrew Mortimer",
+  "devDependencies": {
+    "@nx/workspace": "^19.7.0-canary.20240830-83a387a",
+    "nx": "19.6.4"
+  },
+  "nx": {}
 }

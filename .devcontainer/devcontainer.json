@@ -1,6 +1,7 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"features": {
+		"ghcr.io/balazs23/devcontainers-features/nx:1": {}
 	},
 	"customizations": {
 		"vscode": {
@@ -10,7 +11,8 @@
 				"BeardedBear.beardedicons",
 				"BeardedBear.beardedtheme",
 				"ms-vscode-remote.remote-containers",
-				"mhutchie.git-graph"
+				"mhutchie.git-graph",
+				"nrwl.angular-console"
 			]
 		}
 	}
