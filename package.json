@@ -8,8 +8,13 @@
   "keywords": [],
   "author": "Andrew Mortimer",
   "devDependencies": {
+    "@nx/react": "19.7.0-canary.20240830-83a387a",
     "@nx/workspace": "^19.7.0-canary.20240830-83a387a",
     "nx": "19.6.4"
   },
-  "nx": {}
+  "nx": {},
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
 }
