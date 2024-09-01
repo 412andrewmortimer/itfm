@@ -1,0 +1,29 @@
+{
+  "name": "parknitro-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/parknitro-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["parknitro"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/parknitro-e2e/cypress.config.ts",
+        "devServerTarget": "parknitro:serve:development",
+        "testingType": "e2e"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "parknitro:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "parknitro:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

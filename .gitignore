@@ -133,3 +133,6 @@ dist
 
 .nx/cache
 .nx/workspace-data
+
+# angular cache
+.angular

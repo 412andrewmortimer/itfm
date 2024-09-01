@@ -1,0 +1,11 @@
+[build]
+  command = "npx nx run web:build"
+  publish = "dist"
+
+[context.getandrewmortimer]
+  command = "npx nx run getandrewmortimer:build:production"
+  publish = "dist/getandrewmortimer"
+
+[context.empiricalarchetype]
+  command = "npx nx run empiricalarchetype:build:production"
+  publish = "dist/empiricalarchetype"
