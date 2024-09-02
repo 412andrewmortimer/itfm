@@ -1,0 +1,108 @@
+{
+  "name": "parknitro",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "web",
+  "sourceRoot": "apps/parknitro/src",
+  "tags": ["parknitro"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:webpack-browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/parknitro",
+        "index": "apps/parknitro/src/index.html",
+        "main": "apps/parknitro/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/parknitro/tsconfig.app.json",
+        "assets": [
+          "apps/parknitro/src/favicon.ico",
+          "apps/parknitro/src/assets"
+        ],
+        "styles": ["apps/parknitro/src/styles.scss"],
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/parknitro/webpack.config.js"
+        }
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/parknitro/webpack.prod.config.js"
+          }
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@nx/angular:dev-server",
+      "options": {
+        "port": 4203,
+        "publicHost": "http://localhost:4203"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "parknitro:build:production"
+        },
+        "development": {
+          "buildTarget": "parknitro:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "parknitro:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/parknitro/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "parknitro:build",
+        "port": 4203,
+        "watch": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "parknitro:build:development"
+        },
+        "production": {
+          "buildTarget": "parknitro:build:production"
+        }
+      }
+    }
+  }
+}
