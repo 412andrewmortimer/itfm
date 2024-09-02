@@ -1,7 +1,7 @@
 {
   "name": "web-e2e",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/web-e2e/src",
+  "sourceRoot": "apps/frontend/angular/web-e2e/src",
   "projectType": "application",
   "tags": [],
   "implicitDependencies": ["web"],
@@ -9,7 +9,7 @@
     "e2e": {
       "executor": "@nx/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/web-e2e/cypress.config.ts",
+        "cypressConfig": "apps/frontend/angular/web-e2e/cypress.config.ts",
         "devServerTarget": "web:serve:development",
         "testingType": "e2e"
       },

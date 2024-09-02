@@ -1,7 +1,7 @@
 {
   "name": "empiricalarchetype-e2e",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/empiricalarchetype-e2e/src",
+  "sourceRoot": "apps/frontend/angular/empiricalarchetype-e2e/src",
   "projectType": "application",
   "tags": [],
   "implicitDependencies": ["empiricalarchetype"],
@@ -9,7 +9,7 @@
     "e2e": {
       "executor": "@nx/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/empiricalarchetype-e2e/cypress.config.ts",
+        "cypressConfig": "apps/frontend/angular/empiricalarchetype-e2e/cypress.config.ts",
         "devServerTarget": "empiricalarchetype:serve:development",
         "testingType": "e2e"
       },

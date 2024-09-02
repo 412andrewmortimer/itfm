@@ -1,7 +1,7 @@
 {
   "name": "getandrewmortimer-e2e",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/getandrewmortimer-e2e/src",
+  "sourceRoot": "apps/frontend/angular/getandrewmortimer-e2e/src",
   "projectType": "application",
   "tags": [],
   "implicitDependencies": ["getandrewmortimer"],
@@ -9,7 +9,7 @@
     "e2e": {
       "executor": "@nx/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/getandrewmortimer-e2e/cypress.config.ts",
+        "cypressConfig": "apps/frontend/angular/getandrewmortimer-e2e/cypress.config.ts",
         "devServerTarget": "getandrewmortimer:serve:development",
         "testingType": "e2e"
       },

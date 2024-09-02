@@ -3,7 +3,7 @@ export default {
   displayName: 'parknitro',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/apps/parknitro',
+  coverageDirectory: '../../../../coverage/apps/frontend/angular/parknitro',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

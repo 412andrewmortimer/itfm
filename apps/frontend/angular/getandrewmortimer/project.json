@@ -3,26 +3,26 @@
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "web",
-  "sourceRoot": "apps/getandrewmortimer/src",
+  "sourceRoot": "apps/frontend/angular/getandrewmortimer/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/getandrewmortimer",
-        "index": "apps/getandrewmortimer/src/index.html",
-        "main": "apps/getandrewmortimer/src/main.ts",
+        "outputPath": "dist/apps/frontend/angular/getandrewmortimer",
+        "index": "apps/frontend/angular/getandrewmortimer/src/index.html",
+        "main": "apps/frontend/angular/getandrewmortimer/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/getandrewmortimer/tsconfig.app.json",
+        "tsConfig": "apps/frontend/angular/getandrewmortimer/tsconfig.app.json",
         "assets": [
-          "apps/getandrewmortimer/src/favicon.ico",
-          "apps/getandrewmortimer/src/assets"
+          "apps/frontend/angular/getandrewmortimer/src/favicon.ico",
+          "apps/frontend/angular/getandrewmortimer/src/assets"
         ],
-        "styles": ["apps/getandrewmortimer/src/styles.css"],
+        "styles": ["apps/frontend/angular/getandrewmortimer/src/styles.css"],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "apps/getandrewmortimer/webpack.config.js"
+          "path": "apps/frontend/angular/getandrewmortimer/webpack.config.js"
         }
       },
       "configurations": {
@@ -41,7 +41,7 @@
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "apps/getandrewmortimer/webpack.prod.config.js"
+            "path": "apps/frontend/angular/getandrewmortimer/webpack.prod.config.js"
           }
         },
         "development": {
@@ -84,7 +84,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/getandrewmortimer/jest.config.ts"
+        "jestConfig": "apps/frontend/angular/getandrewmortimer/jest.config.ts"
       }
     },
     "serve-static": {

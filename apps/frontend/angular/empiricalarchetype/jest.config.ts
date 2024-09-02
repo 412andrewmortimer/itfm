@@ -3,7 +3,7 @@ export default {
   displayName: 'empiricalarchetype',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../..../../coverage/apps/empiricalarchetype',
+  coverageDirectory: '../..../../coverage/apps/frontend/angular/empiricalarchetype',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
