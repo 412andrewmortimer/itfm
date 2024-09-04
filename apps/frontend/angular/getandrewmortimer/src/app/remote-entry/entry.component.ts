@@ -21,8 +21,9 @@ import { HomeComponent, NavigationComponent } from '@web/shared-ui';
   imports: [CommonModule, HomeComponent, NavigationComponent],
 })
 export class RemoteEntryComponent {
-  dynamicMenuItems: string[]|undefined;
-  siteTitle: string|undefined;
+  dynamicMenuItems: string[] | undefined;
+  siteTitle: string | undefined;
+
   constructor() {
     this.dynamicMenuItems = ['Home', 'Blog', 'Contact'];
     this.siteTitle = 'Get Andrew Mortimer';

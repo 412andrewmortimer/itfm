@@ -19,7 +19,7 @@
           "apps/frontend/angular/getandrewmortimer/src/favicon.ico",
           "apps/frontend/angular/getandrewmortimer/src/assets"
         ],
-        "styles": ["apps/frontend/angular/getandrewmortimer/src/styles.css"],
+        "styles": ["apps/frontend/angular/getandrewmortimer/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/frontend/angular/getandrewmortimer/webpack.config.js"
@@ -58,8 +58,8 @@
     "serve": {
       "executor": "@nx/angular:dev-server",
       "options": {
-        "port": 4201,
-        "publicHost": "http://localhost:4201"
+        "port": 4202,
+        "publicHost": "http://localhost:4202"
       },
       "configurations": {
         "production": {
@@ -92,7 +92,7 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "getandrewmortimer:build",
-        "port": 4201,
+        "port": 4202,
         "watch": false
       },
       "configurations": {

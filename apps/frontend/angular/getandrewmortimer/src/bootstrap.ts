@@ -1,6 +1,13 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from './app/app.module';
+import { importProvidersFrom } from '@angular/core';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { RemoteEntryComponent } from './app/remote-entry/entry.component';
+import { appRoutes } from './app/app.routes';
 
-platformBrowserDynamic()
-  .bootstrapModule(AppModule)
-  .catch((err) => console.error(err));
+bootstrapApplication(RemoteEntryComponent, {
+  providers: [
+    importProvidersFrom(
+      RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' })
+    ),
+  ],
+});

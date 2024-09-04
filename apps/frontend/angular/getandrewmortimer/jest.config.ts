@@ -3,7 +3,7 @@ export default {
   displayName: 'getandrewmortimer',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/frontend/angular/getandrewmortimer',
+  coverageDirectory: '../..../../coverage/apps/frontend/angular/getandrewmortimer',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
