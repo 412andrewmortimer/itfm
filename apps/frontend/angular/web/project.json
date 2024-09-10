@@ -16,7 +16,7 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/frontend/angular/web/tsconfig.app.json",
         "assets": ["apps/frontend/angular/web/src/favicon.ico", "apps/frontend/angular/web/src/assets"],
-        "styles": ["apps/frontend/angular/web/src/styles.css"],
+        "styles": ["apps/frontend/angular/web/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/frontend/angular/web/webpack.config.js"
@@ -91,5 +91,5 @@
         "port": 4200
       }
     }
-  }
+  }  
 }

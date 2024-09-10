@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent, NavigationComponent } from '@web/frontend/angular/shared-ui';
+import { HomeComponent, NavigationComponent } from '@web/shared-ui';
 
 @Component({
   selector: 'web-parknitro-entry',

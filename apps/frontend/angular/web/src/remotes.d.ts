@@ -1,4 +1,4 @@
-declare module 'getandrewmortimer/Module';
+declare module 'getandrewmortimer/Routes';
 
 declare module 'empiricalarchetype/Routes';
 

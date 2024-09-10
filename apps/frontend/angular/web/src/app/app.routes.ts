@@ -1,23 +1,20 @@
-import { NxWelcomeComponent } from './nx-welcome.component';
-import { Route } from '@angular/router';
+import { Routes } from '@angular/router';
 
-export const appRoutes: Route[] = [
+export const routes: Routes = [
+  {
+    path: '',
+    loadComponent: () => import('@web/shared-ui').then(m => m.HomeComponent),
+  },
   {
     path: 'parknitro',
-    loadChildren: () => import('parknitro/Routes').then((m) => m.remoteRoutes),
+    loadChildren: () => import('parknitro/Routes').then(m => m.remoteRoutes),
   },
   {
     path: 'empiricalarchetype',
-    loadChildren: () =>
-      import('empiricalarchetype/Routes').then((m) => m.remoteRoutes),
+    loadChildren: () => import('empiricalarchetype/Routes').then(m => m.remoteRoutes),
   },
   {
     path: 'getandrewmortimer',
-    loadChildren: () =>
-      import('getandrewmortimer/Module').then((m) => m.RemoteEntryModule),
-  },
-  {
-    path: '',
-    component: NxWelcomeComponent,
+    loadChildren: () => import('getandrewmortimer/Routes').then(m => m.remoteRoutes),
   },
 ];

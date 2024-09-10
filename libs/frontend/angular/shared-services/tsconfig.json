@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "es2022",
-    "useDefineForClassFields": false,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
@@ -13,15 +12,11 @@
   "include": [],
   "references": [
     {
-      "path": "./tsconfig.app.json",
-      "composite": true,
+      "path": "./tsconfig.lib.json",
+      "composite": true
     },
     {
-      "path": "./tsconfig.spec.json",
-      "composite": true,
-    },
-    {
-      "path": "./tsconfig.editor.json"
+      "path": "./tsconfig.spec.json"
     }
   ],
   "extends": "../../../../tsconfig.base.json",
