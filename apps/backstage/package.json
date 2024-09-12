@@ -1,11 +1,12 @@
 {
-  "name": "root",
+  "name": "backstage",
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "18 || 20"
+    "node": "18"
   },
   "scripts": {
+    "yarn:install": "yarn install",
     "dev": "concurrently \"yarn start\" \"yarn start-backend\"",
     "start": "yarn workspace app start",
     "start-backend": "yarn workspace backend start",

@@ -4,7 +4,9 @@
   "description": "Implement the Fullstack Manual",
   "scripts": {
     "test": "node --version",
-    "backstage:init": "npx @backstage/create-app --path apps/backstage"
+    "backstage:init": "npx @backstage/create-app --path apps/backstage",
+    "backstage:install": "yarn install",
+    "itfm:install": "npm install"
   },
   "keywords": [],
   "author": "Andrew Mortimer",
