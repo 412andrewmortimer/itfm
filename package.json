@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Implement the Fullstack Manual",
   "scripts": {
-    "test": "node --version"
+    "test": "node --version",
+    "backstage:init": "npx @backstage/create-app --path apps/backstage"
   },
   "keywords": [],
   "author": "Andrew Mortimer",
