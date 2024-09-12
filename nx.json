@@ -4,5 +4,7 @@
   "workspaceLayout": {
     "libsDir": "libs",
     "appsDir": "apps"
-  }
+  },
+  "projects": { "backstage": "apps/backstage" }
+
 }
