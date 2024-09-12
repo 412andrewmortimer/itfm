@@ -1,17 +1,17 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
 	"features": {
 		"ghcr.io/balazs23/devcontainers-features/nx:1": {}
 	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"GitHub.copilot",
-				"GitHub.copilot-chat",
 				"BeardedBear.beardedicons",
 				"BeardedBear.beardedtheme",
-				"ms-vscode-remote.remote-containers",
+				"GitHub.copilot-chat",
+				"GitHub.copilot",
 				"mhutchie.git-graph",
+				"ms-vscode-remote.remote-containers",
 				"nrwl.angular-console"
 			]
 		}
