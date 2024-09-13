@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "backstage": {
+      "root": "apps/backstage",
+      "sourceRoot": "apps/backstage/src",
+      "projectType": "application",
+      "targets": {}
+    }
+  }
+}
