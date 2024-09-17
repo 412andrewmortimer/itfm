@@ -1,5 +1,5 @@
 export enum RouteTheme {
-  '/'= 'sunset',
+  '/'= 'night',
   '/parknitro' = 'forest',
   '/empiricalarchetype' = 'dracula',
   '/getandrewmortimer' = 'coffee',

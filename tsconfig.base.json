@@ -15,8 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@web/shared-ui": ["libs/frontend/angular/shared-ui/src/index.ts"],
-      "@web/shared-services": ["libs/frontend/angular/shared-services/src/index.ts"]
+      "@web/shared-services": [
+        "libs/frontend/angular/shared-services/src/index.ts"
+      ],
+      "@web/shared-ui": ["libs/frontend/angular/shared-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
